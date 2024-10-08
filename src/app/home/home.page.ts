@@ -5,6 +5,8 @@ import mqtt, { MqttClient } from 'mqtt';
 import { IonicModule } from '@ionic/angular';
 import { Router } from '@angular/router';
 
+
+
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -46,5 +48,17 @@ ngOnInit() {
   gotoPage(){
     this.client?.end();
     this.router.navigate(['/ejemplo2']);
+  }
+
+  gotoUser() {
+    this.router.navigate(['/user']);  // Asegúrate de que '/user' sea una ruta válida
+  }
+
+  gotoSettings() {
+    this.router.navigate(['/settings']);  // Asegúrate de que '/settings' sea una ruta válida
+  }
+
+  gotoFaculties() {
+    this.router.navigate(['/faculties']);  // Asegúrate de que '/faculties' sea una ruta válida
   }
 }

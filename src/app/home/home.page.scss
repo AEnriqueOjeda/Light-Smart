@@ -25,3 +25,19 @@
 #container a {
   text-decoration: none;
 }
+.short-card {
+  max-height: 380px;  /* O usa height para un valor fijo */
+  overflow: hidden;   /* Esto evita que el contenido se desborde */
+  max-width: floor($number: 5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+.short-card .ion-card-header {
+  padding-bottom: 10px;  /* Ajusta el espacio inferior del header */
+}
+
+.short-card .ion-card-content {
+  padding-top: 10px;     /* Ajusta el espacio superior del contenido */
+}
